@@ -1,6 +1,6 @@
 import { View, Image } from "react-native";
 
-export default function ViewImageSCreen() {
+export default function ViewImageScreen() {
   return (
     <View style={{ flex: 1, backgroundColor: "black" }}>
       <View

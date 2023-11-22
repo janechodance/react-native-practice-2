@@ -1,3 +1,4 @@
+import { useRouter } from "expo-router";
 import {
   StyleSheet,
   Image,
@@ -8,6 +9,7 @@ import {
 } from "react-native";
 
 export default function WelcomeScreen() {
+  const router = useRouter();
   return (
     <ImageBackground
       source={require("../assets/backGround.png")}
@@ -41,6 +43,7 @@ export default function WelcomeScreen() {
           height: 70,
           width: "100%",
         }}
+        onPress={() => router.push("screens/ViewImageScreen")}
       />
       <TouchableOpacity
         style={{
@@ -48,6 +51,7 @@ export default function WelcomeScreen() {
           height: 70,
           width: "100%",
         }}
+        onPress={() => router.push("/screens/WelcomeScreen")}
       />
     </ImageBackground>
   );
